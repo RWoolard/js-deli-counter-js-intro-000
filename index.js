@@ -21,5 +21,5 @@ function currentLine(katzDeliLine) {
   for (var counter = 0; counter < katzDeliLine.length; counter++) {
   var line = counter + 1 + `. ${katzDeliLine[counter]}`
       }
-    return string.push(line);
+    return string;
 }
