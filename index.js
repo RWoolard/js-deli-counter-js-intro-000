@@ -6,13 +6,11 @@ katzDeliLine.push(name);
 }
 
 function nowServing (katzDeliLine) {
-     while (katzDeliLine.length > 0) {
-    return (`Currently serving ${katzDeliLine[0]}.`)
-  }
-  while(katzDeliLine.length > 0) {
-    katzDeliLine.shift();
-  }
-  return ("There is nobody waiting to be served!");
+     if (katzDeliLine.length > 0) {
+    return (`Currently serving ${katzDeliLine.shift()}.`)
+  } else {
+    return ("There is nobody waiting to be served!");
+}
 }
 
 function currentLine(katzDeliLine) {
