@@ -19,7 +19,7 @@ function currentLine(katzDeliLine) {
   }
   var customerArray =  [];
   for (var counter = 0; counter < katzDeliLine.length; counter++) {
-    customerArray.push(" " + (counter + 1) + ". " + katzDeliLine[counter]);
+    customerArray.push(" " + (counter + 1) + `. ${katzDeliLine[counter]}`);
       }
-    return ("The line is currently: " + customerArray);
+    return ("The line is currently:" + customerArray);
 }
